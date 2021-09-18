@@ -1,0 +1,28 @@
+{
+  "name": "build-your-react",
+  "version": "1.0.0",
+  "description": "professional",
+  "main": "main.js",
+  "dependencies": {
+    "core-js": "^3.17.3",
+    "react-dev-utils": "^11.0.4",
+    "webpack": "^5.53.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config ./config/webpack.common.config.js",
+    "build": "webpack-dev-server --config ./config/webpack.prod.config.js"
+  },
+  "author": "rq",
+  "license": "ISC"
+}
