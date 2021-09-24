@@ -5,15 +5,19 @@ import render from "./render"
 //         <div>{'hello,webpack!'}</div>
 //     )
 // }
-const textElement = {
-    type: "span",
-    props: {
-      children: [
-        {
-          type: "TEXT ELEMENT",
-          props: { nodeValue: "Foo" }
-        }
-      ]
-    }
-  };
-console.log(render(textElement,document.getElementById('root')))
+const element = {
+  type: "ddd",
+  props: {
+    id: "container",
+    onclick:()=>{
+      console.log(999)
+    },
+    children: [
+      { type: "input", props: { value: "foo123", type: "text" } },
+      { type: "a", props: { value:"标签",type: "text",href: "/bar" } },
+      { type: "span", props: {} }
+    ]
+  }
+};
+  render(element,document.getElementById('root'))
+console.log(123)

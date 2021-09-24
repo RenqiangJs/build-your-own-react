@@ -6,16 +6,12 @@ module.exports = {
     },
     output:{
         filename:'js/bundles.js',
-        path:path.resolve(__dirname,'../dist')
-    },
-    devServer: {
-        static: "./",
-        host:"localhost",
-        port:8080,
-        open:true
+        path:__dirname+'/dist'
     },
     plugins:[
-        new webpack.HotModuleReplacementPlugin()
+            new webpack.DefinePlugin({
+              BASE_URL: '"./"'
+            })
     ],
     module: {
         rules: [
